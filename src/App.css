@@ -1,6 +1,7 @@
 .App {
   height: 100vh;
-  background-color: #1a202c;
+  background: #8a9400 url("assets/shrek-swamp-background.jpg") no-repeat center;
+  background-size: cover;
   overflow: scroll;
   text-align: center;
 }
@@ -89,7 +90,7 @@
 
 .gif-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
   justify-items: center;
   margin: 0;
@@ -104,11 +105,33 @@
   align-self: center;
 }
 
+.gif-item .details {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding-top: 8px;
+}
+
+.gif-item .details .submitted-by {
+  font-size: 9px;
+}
+
 .gif-item img {
   width: 100%;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.gif-item .vote {
+  position: absolute;
+  top: 68%;
+  left: 72%;
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  padding: 8px 20px;
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
 }
 
 .connected-container input[type='text'] {
