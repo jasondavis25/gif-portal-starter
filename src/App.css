@@ -1,153 +1,151 @@
 .App {
-  height: 100vh;
-  background: #8a9400 url("assets/shrek-swamp-background.jpg") no-repeat center;
-  background-size: cover;
-  overflow: scroll;
-  text-align: center;
+    height: 100vh;
+    background: #8a9400 url("assets/shrek-swamp-background.jpg") no-repeat center;
+    background-size: cover;
+    overflow: scroll;
+    text-align: center;
 }
 
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 30px 0 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px 0 30px;
 }
 
 .authed-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
 }
 
 .header {
-  margin: 0;
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
 }
 
 .sub-text {
-  font-size: 25px;
-  color: white;
+    font-size: 25px;
+    color: white;
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cta-button {
-  height: 45px;
-  border: 0;
-  width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
+    height: 45px;
+    border: 0;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #60c657, #35aee2);
-  background-size: 200% 200%;
-  animation: gradient-animation 4s ease infinite;
+    background: -webkit-linear-gradient(left, #60c657, #35aee2);
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
 }
 
 .submit-gif-button {
-  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
-  background-size: 200% 200%;
-  animation: gradient-animation 4s ease infinite;
-  margin-left: 10px;
+    background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+    margin-left: 10px;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 45px;
+    padding-top: 160px;
 }
 
 .twitter-logo {
-  width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
 }
 
 .footer-text {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .gif-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1.5rem;
-  justify-items: center;
-  margin: 0;
-  padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .gif-grid .gif-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-self: center;
-  align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-self: center;
+    align-self: center;
 }
 
 .gif-item .details {
-  text-align: left;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  padding-top: 8px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding-top: 8px;
 }
 
 .gif-item .details .submitted-by {
-  font-size: 9px;
+    font-size: 9px;
 }
 
 .gif-item img {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .gif-item .vote {
-  position: absolute;
-  top: 68%;
-  left: 72%;
-  background: -webkit-linear-gradient(left, #60c657, #35aee2);
-  padding: 8px 20px;
-  background-size: 200% 200%;
-  animation: gradient-animation 4s ease infinite;
+    position: absolute;
+    top: 68%;
+    left: 72%;
+    background: -webkit-linear-gradient(left, #60c657, #35aee2);
+    padding: 8px 20px;
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
 }
 
 .connected-container input[type='text'] {
-  display: inline-block;
-  color: white;
-  padding: 10px;
-  width: 50%;
-  height: 60px;
-  font-size: 16px;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.25);
-  border: none;
-  border-radius: 10px;
-  margin: 50px auto;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    height: 60px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    margin: 50px auto;
 }
 
 .connected-container button {
-  height: 50px;
+    height: 50px;
 }
